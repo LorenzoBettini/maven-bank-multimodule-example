@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+  <Appenders>
+    <Console name="MainConsoleAppender" target="SYSTEM_OUT">
+      <PatternLayout pattern="%d [%p] %c{1} – %m%n" />
+    </Console>
+    <Console name="ConsoleAppender" target="SYSTEM_OUT">
+      <PatternLayout
+        pattern="%d %-5level %logger{36} - %msg%n%throwable" />
+    </Console>
+  </Appenders>
+  <Loggers>
+    <Logger name="testing.example.bank.app.Main" level="INFO"
+      additivity="false">
+      <AppenderRef ref="MainConsoleAppender" />
+    </Logger>
+    <Root level="INFO">
+      <AppenderRef ref="ConsoleAppender" />
+    </Root>
+  </Loggers>
+</Configuration>
