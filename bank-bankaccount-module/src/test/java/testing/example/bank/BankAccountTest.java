@@ -11,7 +11,7 @@ public class BankAccountTest {
 		// setup
 		BankAccount bankAccount = new BankAccount();
 		// verify
-		assertThat(bankAccount.getId()).isNotNegative();
+		assertThat(bankAccount.getId()).isPositive();
 	}
 
 	@Test
